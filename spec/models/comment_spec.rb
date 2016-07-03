@@ -4,6 +4,7 @@ RSpec.describe Comment, type: :model do
   context 'Assocation' do
     it { is_expected.to belong_to :user  }
     it { is_expected.to belong_to :parent  }
+    it { is_expected.to have_many :replies  }
   end
 
   context 'Validations' do
